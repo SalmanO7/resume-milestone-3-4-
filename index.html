@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="userContainer" id="userContainer">
+        <div class="userForm" id="userForm">
+            <div class="personalInfo">
+                <h2>Personal Info</h2>
+                <div> FullName <input required type="text" id="userName" placeholder="Enter Your Name">
+                </div>
+                <div>
+                    About <input required type="text" id="userAbout" placeholder="Enter Your About">
+
+                </div>
+                <div>
+                    Age <input required type="number" min="10" max="80" id="userAge" placeholder="Enter Your Age">
+
+                </div>
+                <div>
+                    Nationality <input required type="text" id="userNationality" placeholder="Enter Your Nationality">
+                </div>
+                <div>
+                    Language <input required type="text" id="userLanguage" placeholder="Enter Your Language">
+                </div>
+                <div>
+                    Hobbies/Interests <input required type="text" id="userHobbie" placeholder="Enter Your About">
+                </div>
+                <div>
+                    Address
+                    <textarea rows="10" id="userAddress" id="userAddress" placeholder="Enter Your Address"></textarea>
+                </div>
+
+            </div>
+            <div class="contactInfo">
+                <h2>Contcat Info</h2>
+                <div>
+                    email <input required type="email" id="userEmail" placeholder="Enter Your Email">
+                </div>
+                <div>
+                    phone <input required type="number" min="8" max="13" id="userPhone"
+                        placeholder="Enter Your Contact Number">
+                </div>
+                <div>
+                    LinkedIn <input required type="text" id="userSocial" placeholder="Enter Your Linkdin Account">
+                </div>
+            </div>
+            <div class="education">
+                <h2>Education</h2>
+                <div>
+                    Institute<input required type="text" id="userInstitute" placeholder="Enter Your Institute">
+                </div>
+                <div>
+                    Degree<input required type="text" id="userDegree" placeholder="Enter Your Degree">
+                </div>
+                <div>
+                    Year<input required type="number" id="userYear" placeholder="Enter Your Degree Year">
+                </div>
+            </div>
+            <div class="experience">
+                <h2>Experience</h2>
+                <div>
+                    Job Title <input required type="text" id="userJob" placeholder="Enter Your Job Title">
+                </div>
+                <div>
+                    Job Description <textarea rows="15" id="userJobDescription" id="userDescription"
+                        placeholder="Enter Your job Description"></textarea>
+
+                </div>
+            </div>
+            <div class="skills">
+                <h2>Skills</h2>
+                <div>
+                    skill 1 <input required type="text" id="userSkill1" placeholder="Enter Your Skills">
+                </div>
+                <div>
+                    skill 2 <input required type="text" id="userSkill2" placeholder="Enter Your Skills">
+                </div>
+                <div>
+                    skill 3 <input required type="text" id="userSkill3" placeholder="Enter Your Skills">
+                </div>
+                <div>
+                    skill 4 <input required type="text" id="userSkill4" placeholder="Enter Your Skills">
+                </div>
+                <div>
+                    skill 5 <input required type="text" id="userSkill5" placeholder="Enter Your Skills">
+                </div>
+            </div>
+        </div>
+        <button id="generateResumeBtn" class="generate-btn"> Generate Resume</button>
+    </div>
+
+
+    <div id="resumeContainer" class="resume-container">
+        <header>
+            <h1 id="Name">Muhammad Salman</h1>
+            <p id="About">Frontend Web Developer | React | Next.js | TailwindCSS</p>
+        </header>
+        <div class="btns">
+            <button id="PersonalInfoEdit" class="btn">Edit Personal Info</button>
+            <button id="ContactInfoEdit" class="btn">Edit Contact Info</buttonck=>
+        </div>
+        <section class="personal-info">
+            <h2>Personal Information</h2>
+            <h4>Full Name: <span id="fullName">Muhammad Salman</span></h4>
+            <h4>Age: <span id="age">18</span></h4>
+            <h4>Address: <span id="address">Karachi,</span></h4>
+            <h4>Nationality: <span id="nationality"> Pakistani</span></h4>
+            <h4>Language: <span id="language">Urdu, English</span></h4>
+            <h4>Hobbies/Interests: <span id="hobbie"> Coding, Gaming, Reading</span></h4>
+        </section>
+        <section class="contact-info">
+            <h2>Contact Information</h2>
+            <h4>Email: <span id="email"> salman@gmail.com</span></h4>
+            <h4>Phone: <span id="number">+92 324 8275845</span></h4>
+            <h4>LinkedIn: <a href="https://www.linkedin.com/in/muhammad-salman-5b77001b0/"><span
+                        id="social">muhammad-salman-5b77001b0</span></a>
+            </h4>
+        </section>
+        <section class="education">
+            <h2>Education</h2>
+            <h4>Institute: <span id="Institute">Muhammad Shafi Educational Complex</span></h4>
+            <h4>Degree: <span id="degree"> Intermediate (In Progress)</span></h4>
+            <h4>Year: <span id="year">2024</span></h4>
+        </section>
+        <section class="experience">
+            <h2>Experience</h2>
+            <div class="job">
+                <h3 id="jobTitle">Frontend Web Developer Intern</h3>
+                <p id="exTime">HiSkyTech | September 2024 - Present</p>
+                <p id="jobDescription">Building and optimizing web applications using React and TailwindCSS.
+                    Collaborating with teams to create user-friendly, responsive interfaces.
+                    Learning Next.js and TypeScript for real-world projects.</p>
+            </div>
+        </section>
+        <section class="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li id="skill1">HTML5, CSS3, JavaScript, TypeScript</li>
+                <li id="skill2">React, Next.js</li>
+                <li id="skill3">TailwindCSS, Bootstrap</li>
+                <li id="skill4">Responsive Web Design</li>
+
+            </ul>
+        </section>
+
+    </div>
+
+    <script src="userResume.js"></script>
+</body>
+
+</html>
